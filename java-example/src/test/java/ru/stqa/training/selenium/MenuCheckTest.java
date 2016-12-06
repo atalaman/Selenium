@@ -36,7 +36,6 @@ public class MenuCheckTest extends TestBase {
     }
   }
 
-
   boolean isElementPresent(WebDriver driver, By locator) {
     try {
       driver.findElement(locator);
@@ -46,7 +45,8 @@ public class MenuCheckTest extends TestBase {
     }
   }
 
-  boolean areElementsPresent(WebDriver driver, By locator) {
-    return driver.findElements(locator).size() > 0;
-  }
+  boolean areElementsPresent(WebDriver driver, By locator)
+    {
+     return driver.findElements(locator).size() > 0;
+    }
 }
